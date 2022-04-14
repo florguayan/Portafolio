@@ -1,7 +1,5 @@
 body{
 	font-family: 'Source Code Pro', monospace;
-<<<<<<< HEAD
-=======
 	background-color: pink;
 }
 li{
@@ -9,6 +7,5 @@ li{
 }
 a{
 	text-decoration: none;
-	outline: none;
->>>>>>> a1508d0 (otro commit)
+	outline: none
 }
