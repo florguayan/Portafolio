@@ -1,11 +1,83 @@
-body{
-	font-family: 'Source Code Pro', monospace;
-	background-color: pink;
-}
-li{
-	list-style: none;
-}
-a{
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
 	text-decoration: none;
-	outline: none
+	outline: none;
+	list-style: none;
+	font-family: 'Comfortaa', cursive;
+	color: #000;
+	background-image: ;
+	/*color:#DD9F92;*/
+	/*color:#5D5D52;*/
+	/*color:#E4C7C1;*/
+	/*color: #FFF7F5;*/
+}
+header{
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	background-color: #DD9F92;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 1px 1px 10px 1px #3c3c3ccc;
+}
+.container-logo{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+.container-logo img{
+	height: 100%;
+}
+.container-social-media{
+	position: relative;
+	height: 100%;
+}
+.container-social-media ul{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-social-media ul li{
+	padding: 0px 10px;
+}
+.btn-login{
+	background-color:#E4C7C1;
+	color:#fff;
+	font-weight: bold;
+	text-shadow: 1px 1px 5px #0000006e;
+	border: none;
+	padding: 10px;
+	border-radius: 15px;
+	box-shadow: 1px 1px 5px #0000006e;
+	transition: 1s;
+}
+.btn-login:hover{
+	background-color: #FFF7F5;
+	/*color: #dd9f92;*/
+	transition: 1s;
+}
+.fa-brands{
+	font-size: 40px;
+	font-weight: 300;
+	animation-duration: 10s;
+	--fa-animation-duration: 3s;
+	--fa-animation-iteration-count:2;
+	color: #E4C7C1;
+	text-shadow: 1px 1px 5px #0000006e;
+}
+.fa-brands:hover{
+	color: #FFF7F5;
+	transition: 1s;
+}
+.banner{
+	width: 100%;
 }
