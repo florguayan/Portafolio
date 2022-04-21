@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
 
 *{
 	padding: 0;
@@ -7,77 +7,182 @@
 	outline: none;
 	list-style: none;
 	font-family: 'Comfortaa', cursive;
-	color: #000;
-	background-image: ;
-	/*color:#DD9F92;*/
-	/*color:#5D5D52;*/
-	/*color:#E4C7C1;*/
-	/*color: #FFF7F5;*/
+	color: #1a2e35;
+	/*color anaranjado:#ff725e;*/
+	/*color anaranjado mas oscuro: #cc5b4b;*/
+	/*color azul oscuro:#263238;*/
+	/*color azul mas claro:#455a64;*/
 }
-header{
+.header{
 	width: 100%;
-	height: 70px;
+	height: 50px;
 	position: fixed;
 	z-index: 100;
 	top: 0;
-	right: 0;
-	background-color: #DD9F92;
-	display: flex;
-	justify-content: space-between;
+	background-color: #263238;
 	box-shadow: 1px 1px 10px 1px #3c3c3ccc;
 }
-.container-logo{
+.header-content{
+	display: flex;
+    height: 50px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+.header__logo{
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center; 
 }
-.container-logo img{
+.header__logo img{
 	height: 100%;
 }
-.container-social-media{
+.social-media{
 	position: relative;
 	height: 100%;
 }
-.container-social-media ul{
+.social-media__ul{
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: 10px;
 }
 
-.container-social-media ul li{
+.social-media__ul-li{
 	padding: 0px 10px;
 }
 .btn-login{
-	background-color:#E4C7C1;
+	background-color:#ff725e;
 	color:#fff;
 	font-weight: bold;
 	text-shadow: 1px 1px 5px #0000006e;
 	border: none;
-	padding: 10px;
+	line-height: 13px;
+	padding: 8px;
 	border-radius: 15px;
 	box-shadow: 1px 1px 5px #0000006e;
-	transition: 1s;
+	transition: 0.5s;
 }
 .btn-login:hover{
-	background-color: #FFF7F5;
-	/*color: #dd9f92;*/
-	transition: 1s;
+	background-color: #cc5b4b;
+	transition: 0.5s;
 }
-.fa-brands{
-	font-size: 40px;
+.fa-brands, .fa-regular{
+	font-size: 28px;
 	font-weight: 300;
 	animation-duration: 10s;
 	--fa-animation-duration: 3s;
 	--fa-animation-iteration-count:2;
-	color: #E4C7C1;
-	text-shadow: 1px 1px 5px #0000006e;
+	color: #ff725e;
 }
-.fa-brands:hover{
-	color: #FFF7F5;
-	transition: 1s;
+.fa-brands:hover, .fa-regular:hover{
+	color: #cc5b4b;
+	transition: 0.5s;
 }
 .banner{
 	width: 100%;
+    margin: 0 auto;
+    max-width: 1700px;
+    position: relative;
+    text-align: center;
+    top: 70px;
+    margin-bottom: 80px;
+}
+.banner__img{
+	width: 70%;
+	height: auto;
+}
+.document-css{
+	position: absolute;
+    width: 9.59%;
+    top: 19.8%;
+    left: 70.2%;
+}
+.img-banner{
+	width: 100%;
+}
+.document-html{
+	position: absolute;
+    width: 8.70%;
+    top: 10.85%;
+    left: 53.85%;
+}
+.document-js{
+	position: absolute;
+    width: 7.6%;
+    top: 40.85%;
+    left: 21.35%;
+}
+.scale{
+	animation-name: scaledocument;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+@keyframes scaledocument{
+	0%{
+		transform: scale(1);
+	}
+	30%{
+		transform: scale(1.15);
+	}
+	50%{
+		transform: scale(1);
+	}
+	80%{
+		transform: scale(1.17);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.fit-profile{
+	max-width: 1200px;
+	margin: auto;
+	line-height: 26px;
+}
+.bg-my-profile{
+	margin: 5% 0;
+	padding: 5%;
+	background: #f5f5f5;
+}
+.bg{
+    padding: 0 5%;
+}
+.my-profile{
+	display: flex;
+	justify-content: flex-start;
+}
+.my-profile__img{
+	width: 15%;
+	height: 15%;
+	margin-right: 30px;
+}
+.my-profile__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 100%;
+}
+.my-profile__title{
+	margin: auto 0;
+}
+.my-profile__title h1{
+	text-transform:uppercase;
+	font-family: 'Poppins', sans-serif;
+	line-height: 40px;
+}
+.title{
+	font-family: 'Poppins', sans-serif;
+	text-transform:uppercase;
+	font-weight: 500;
+	color:#ff735d;
+}
+.footer{
+	width: 100%;
+	height: 50px;
+	background-color: #263238;
 }
