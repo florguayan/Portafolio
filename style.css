@@ -30,6 +30,7 @@
     margin: auto;
 }
 .header__logo{
+	width: 15%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -37,6 +38,8 @@
 }
 .header__logo img{
 	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 .social-media{
 	position: relative;
@@ -93,6 +96,7 @@
 .banner__img{
 	width: 70%;
 	height: auto;
+	z-index: 60;
 }
 .document-css{
 	position: absolute;
@@ -114,6 +118,12 @@
     width: 7.6%;
     top: 40.85%;
     left: 21.35%;
+}
+.dialog{
+	position: absolute;
+    width: 6.5%;
+    top: 42.96%;
+    left: 48.07%;
 }
 .scale{
 	animation-name: scaledocument;
@@ -139,6 +149,29 @@
 		transform: scale(1);
 	}
 }
+.mechanical-wheel{
+	position: absolute;
+    width: 16.6%;
+    top: 24.85%;
+    left: 38.35%;
+    z-index: -20;
+}
+.rotate{
+	animation-name: rotate;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
 .fit-profile{
 	max-width: 1200px;
 	margin: auto;
@@ -157,7 +190,7 @@
 	justify-content: flex-start;
 }
 .my-profile__img{
-	width: 15%;
+	width: 23%;
 	height: 15%;
 	margin-right: 30px;
 }
@@ -166,6 +199,13 @@
 	height: 100%;
 	object-fit: cover;
 	border-radius: 100%;
+}
+.forma-anaranjada{
+	position: absolute;
+    width: 42%;
+    top: 64%;
+    left: -11%;
+    z-index: -10;
 }
 .my-profile__title{
 	margin: auto 0;
