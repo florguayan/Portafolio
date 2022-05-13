@@ -45,11 +45,11 @@
 	width: 100%;
 	object-fit: cover;
 }
-.social-media{
+.my-social-media{
 	position: relative;
 	height: 100%;
 }
-.social-media__ul{
+.my-social-media__ul{
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -57,7 +57,7 @@
 	margin-right: 10px;
 }
 
-.social-media__ul-li{
+.my-social-media__ul-li{
 	padding: 0px 10px;
 }
 .btn-login{
